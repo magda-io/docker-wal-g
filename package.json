@@ -10,7 +10,7 @@
     "docker-build-prod": "create-docker-context-for-node-component --build --push --tag auto",
     "docker-build-local": "create-docker-context-for-node-component --build --push --tag auto --local",
     "retag-and-push": "retag-and-push",
-    "check-release-version": "if [[ \"$CI_COMMIT_TAG\" == \"v${npm_package_version}\" ]]; then echo \"Version check passed!\"; else echo \"Release tag $CI_COMMIT_TAG is not equal to package version v${npm_package_version}\"; exit 1; fi"
+    "check-release-version": "if [ \"$CI_COMMIT_TAG\" == \"v${npm_package_version}\" ]; then echo \"Version check passed!\"; else echo \"Release tag $CI_COMMIT_TAG is not equal to package version v${npm_package_version}\"; exit 1; fi"
   },
   "config": {
     "docker": {

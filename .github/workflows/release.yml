@@ -14,8 +14,8 @@ env:
   DH_USERNAME: magdabot
 
 jobs:
-  release-helm-chart:
-    name: Release Helm Chart
+  release-docker-image:
+    name: Release Docker Image to Docker Hub
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
