@@ -1,4 +1,4 @@
-# docker-wal-g
+# magda-wal-g
 
 Docker image extends the [bitnami WAL-G Image](https://github.com/bitnami/bitnami-docker-wal-g) and adds [envdir](http://cr.yp.to/daemontools/envdir.html) utility.
 
