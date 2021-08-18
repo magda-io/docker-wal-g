@@ -27,7 +27,6 @@ jobs:
       - run: yarn install
 
       - name: release-version-check
-        shell: bash
         run: yarn check-release-version
 
       - name: Login to GitHub Package Repository
