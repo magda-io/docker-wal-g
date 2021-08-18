@@ -13,10 +13,6 @@ env:
   #Docker Hub username
   DH_USERNAME: magdabot
 
-defaults:
-  run:
-    shell: bash
-
 jobs:
   release-docker-image:
     name: Release Docker Image to Docker Hub
@@ -31,6 +27,7 @@ jobs:
       - run: yarn install
 
       - name: release-version-check
+        shell: bash
         run: yarn check-release-version
 
       - name: Login to GitHub Package Repository
