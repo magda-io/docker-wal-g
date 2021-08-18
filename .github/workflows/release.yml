@@ -13,6 +13,10 @@ env:
   #Docker Hub username
   DH_USERNAME: magdabot
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
   release-docker-image:
     name: Release Docker Image to Docker Hub
