@@ -1,4 +1,4 @@
-name: CI Release Helm Chart
+name: CI Release Docker Image
 
 on:
   release:
