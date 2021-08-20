@@ -1,6 +1,6 @@
 {
   "name": "magda-wal-g",
-  "version": "1.1.0-debian-10-r3",
+  "version": "1.1.0",
   "description": "Docker image extends the bitnami WAL-G Image and adds envdir utility.",
   "main": "index.js",
   "repository": "git@github.com:magda-io/magda-wal-g.git",
