@@ -15,7 +15,7 @@
   "config": {
     "docker": {
       "name": "data61/magda-wal-g",
-      "include": "Dockerfile install_packages"
+      "include": "Dockerfile"
     }
   },
   "dependencies": {
