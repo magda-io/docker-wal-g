@@ -15,7 +15,7 @@
   "config": {
     "docker": {
       "name": "data61/magda-wal-g",
-      "include": "Dockerfile"
+      "include": "Dockerfile adduser.sh"
     }
   },
   "dependencies": {
