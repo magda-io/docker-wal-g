@@ -1,6 +1,6 @@
 FROM docker.io/bitnami/minideb:buster
 
-RUN install_packages daemontools
+RUN install_packages ca-certificates daemontools
 
 COPY --from=koehn/postgres-wal-g:13.4-v1.1 /usr/local/bin/wal-g /usr/local/bin/wal-g
 
