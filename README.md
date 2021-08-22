@@ -19,3 +19,15 @@ $ /usr/local/bin/adduser.sh
 $ /usr/bin/envdir /etc/wal-g.d/env /usr/local/bin/wal-g backup-push
 $ /usr/bin/envdir /etc/wal-g.d/env /usr/local/bin/wal-g delete --confirm retain FULL 7
 ```
+
+## Use WAL-G for creating base backup remotely
+
+wal-g supports creating base backup remotely via [postgresql base backup protocol](https://www.postgresql.org/docs/13/app-pgbasebackup.html).
+
+The protocol requries:
+- a postgresql account with `replication` permission.
+- an entry [with `database` column set to keyword `replication`](https://www.postgresql.org/docs/13/auth-pg-hba-conf.html) in pg_hba.conf allows `replication` connection. e.g.
+
+```
+host     replication     all        0.0.0.0/0               md5
+```
